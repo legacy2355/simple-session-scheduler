@@ -60,7 +60,8 @@
             "silentMessage": "The next session has been automatically scheduled for {date}.",
             "speaker": "Simple Session Scheduler",
             "sessionDatePassed": "The next session date was {date}, but it has already passed. Your GM should update the session date.",
-            "sessionDate": "The next session is scheduled for {date}."
+            "sessionDate": "The next session is scheduled for {date}.",
+            "setInitialSession": "To use the Simple Session Scheduler, you need to set the next session date in Edit World first."
         }
     }
 }

@@ -13,14 +13,9 @@
   "authors": [
     {
       "name": "legacy",
-      "url": "",
       "discord": "legacy2355"
     }
   ],
-  "relationships": {
-    "systems": [],
-    "requires": []
-  },
   "esmodules": [
     "scripts/module.js"
   ],

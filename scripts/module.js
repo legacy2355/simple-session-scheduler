@@ -121,6 +121,18 @@ async function promptNextSessionDate() {
     return;
   }
 
+  if (game.world.nextSession === undefined || game.world.nextSession === null || game.world.nextSession === "") {
+    // If the next session date is not set, prompt the user to set it with a whisper
+    console.log("simple-session-scheduler | Next session date is not set, prompting user to set it.");
+    const message = game.i18n.format("simple-session-scheduler.announcement.setInitialSession");
+      ChatMessage.create({
+        content: message,
+        whisper: [game.user.id],
+        speaker: ChatMessage.getSpeaker({ alias: game.i18n.localize("simple-session-scheduler.announcement.speaker") })
+      });
+    return;
+  }
+
   console.log("simple-session-scheduler | Old session date: " + game.world.nextSession);
   const nextSessionDate = new Date(game.world.nextSession);
   const futureNextSessionDate = nextFutureOccurrence(game.world.nextSession);
