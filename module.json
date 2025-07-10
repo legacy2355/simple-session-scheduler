@@ -1,0 +1,39 @@
+{
+  "id": "simple-session-scheduler",
+  "title": "Simple Session Scheduler",
+  "description": "Set your next session date and time easily",
+  "version": "0.1",
+  "library": "false",
+  "manifestPlusVersion": "1.2.0",
+  "compatibility": {
+    "minimum": 13,
+    "verified": 13,
+    "maximum": 13
+  },
+  "authors": [
+    {
+      "name": "legacy",
+      "url": "",
+      "discord": "legacy2355"
+    }
+  ],
+  "relationships": {
+    "systems": [],
+    "requires": []
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md"
+}
